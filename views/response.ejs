@@ -1,0 +1,35 @@
+<% include partials/header %>
+
+<!-- Get the passed data from app.js and loop through each item in response array and print their data -->
+<section id="movie-response">
+    <div class="container">
+
+        <img src="<%=responseData.Poster %>" alt="">
+
+        <h1> <%= responseData.Title %> </h1>
+
+        <h3>Directed By:</h3>
+        <h4> <%= responseData.Director %> </h4>
+
+        <h3>Starring:</h3>
+        <h4> <%= responseData.Actors %> </h4>
+
+        <h3>Ratings</h3>
+        
+        <article>
+        <% responseData.Ratings.forEach( (rating) => {  %>
+            <div id="rating">
+                <h5>Source:</h5>
+                <h5><%= rating.Source %></h5>
+                <h6>Value: <%= rating.Value %> </h6>
+            </div>
+        <% }) %>
+        </article>
+
+        <form action="/">
+            <button type="submit" class="button_1">Search Again</button>
+        </form>
+    </div>
+</section>  
+
+<% include partials/footer %>

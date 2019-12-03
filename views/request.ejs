@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<section id="welcome">
+    <div class="container">
+        <h1>Welcome To Search A Movie</h1>
+    </div>
+</section>
+
+<section id="movie-search">
+    <div class="container">
+        <h3>Please enter a title to search for a movie</h3>
+
+        <form id="movie-form" action="/api" method="GET">
+            <input type="text" name="movie" id="movie"><br>
+            <button type="submit" class="button_1">Search</button>
+        </form>
+    </div>
+</section>
+        
+
+    
+
+<% include partials/footer %>

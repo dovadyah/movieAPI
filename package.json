@@ -1,0 +1,21 @@
+{
+  "name": "movieAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "ejs": "^2.6.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "locus": "^2.0.1",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Daniel",
+  "license": "ISC"
+}

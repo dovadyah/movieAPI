@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+    font: 15px/1.5 'Montserrat', sans-serif;
+}
+
+/* globals */
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button_1{
+    height: 27px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-size: 1em;
+    color: #000;
+    margin-top: 30px;
+}
+
+/* welcome */
+#welcome{
+    min-height: 200px;
+    text-align: center;
+}
+
+#welcome .container h1{
+    font-size: 2em;
+    margin: 50px 0;
+}
+
+/* movie search */
+#movie-search{
+    min-height: 200px;
+    text-align: center;
+}
+
+#movie-search #movie-form input[type="text"]{
+    height: 2.5em;
+    width: 50%;
+    border: transparent;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    text-align: center;
+    font-size: 1em;
+}
+
+#movie-search #movie-form input[type="text"]:-webkit-autofill,
+#movie-search #movie-form input[type="text"]:-webkit-autofill:hover, 
+#movie-search #movie-form input[type="text"]:-webkit-autofill:focus{
+    text-align: center;
+    background: transparent;
+}
+
+/* response */
+#movie-response{
+    text-align: center;
+}
+
+#movie-response img{
+    margin: 20px 0;
+    width: 200px;
+}
+
+#movie-response h1{
+   font-size: 2em;
+    margin: 50px 0;
+}
+
+#movie-response h4{
+    margin: 0;
+}
+
+#movie-response article{
+    width: 100%;
+    min-height: 200px;
+}
+
+#movie-response #rating{
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#movie-response #search-again{
+    display: block;
+}
